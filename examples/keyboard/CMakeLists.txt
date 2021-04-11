@@ -1,0 +1,5 @@
+add_executable(keyboard_example keyboard.c)
+target_link_libraries(keyboard_example pico_stdlib pico_dshot)
+pico_enable_stdio_usb(keyboard_example 1)
+pico_enable_stdio_uart(keyboard_example 0)
+pico_add_extra_outputs(keyboard_example)
